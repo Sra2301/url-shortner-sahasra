@@ -39,12 +39,11 @@ export default function Profile(){
             <Avatar variant="filled" radius="xl" size="lg" color="red" src="" />
             <Text tt="uppercase"> {profileData?.email}</Text>
             <Text tt="capatilize"> {profileData?.name}</Text>
-            
+            <Text ta="center" size="sm" mt="xs" c="dimmed">User ID: {profileData?._id}</Text>
+            <Text ta="center" size="sm" c="dimmed"><strong><b>Account Created:</b></strong>{profileData?.createdAt}</Text>
         </div>
         </Center>
         </Stack>
 
     )
 }
-
-
